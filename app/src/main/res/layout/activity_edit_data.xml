@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditData">
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@android:color/black"
+        android:text="ENTER UPDATED DETAILS"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etNameUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvText"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        android:hint="Enter Name"
+        android:maxLength="15"
+        android:textAlignment="center"
+
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/etEmailUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/etNameUp"
+        android:background="@android:color/darker_gray"
+        android:hint="Enter Email"
+
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etMobUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etEmailUp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        android:hint="Enter Mobile"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMobUp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:text="UPDATE"
+        android:textColor="@android:color/holo_orange_dark" />
+
+
+</RelativeLayout>
